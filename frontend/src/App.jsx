@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard'
 import CalendarPage from './pages/Calendar'
 import Tasks from './pages/Tasks'
 import Focus from './pages/Focus'
+import Stats from './pages/Stats'
 import { useAuth } from './context/AuthContext'
 
 function ProtectedRoute({ children }) {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/calendar" element={<ProtectedRoute><CalendarPage /></ProtectedRoute>} />
         <Route path="/tasks" element={<ProtectedRoute><Tasks /></ProtectedRoute>} />
         <Route path="/focus" element={<ProtectedRoute><Focus /></ProtectedRoute>} />
+        <Route path="/stats" element={<ProtectedRoute><Stats /></ProtectedRoute>} />
       </Routes>
     </BrowserRouter>
   )
