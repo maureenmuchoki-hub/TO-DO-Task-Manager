@@ -4,6 +4,7 @@ import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import CalendarPage from './pages/Calendar'
 import Tasks from './pages/Tasks'
+import Focus from './pages/Focus'
 import { useAuth } from './context/AuthContext'
 
 function ProtectedRoute({ children }) {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/calendar" element={<ProtectedRoute><CalendarPage /></ProtectedRoute>} />
         <Route path="/tasks" element={<ProtectedRoute><Tasks /></ProtectedRoute>} />
+        <Route path="/focus" element={<ProtectedRoute><Focus /></ProtectedRoute>} />
       </Routes>
     </BrowserRouter>
   )
