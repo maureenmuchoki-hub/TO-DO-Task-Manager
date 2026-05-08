@@ -28,5 +28,5 @@ app.listen(process.env.PORT || 5000, () =>
 )
 
 mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log('MongoDB Atlas connected'))
+  .then(() => console.log('MongoDB connected to:', process.env.MONGO_URI))
   .catch(err => console.error('DB connection error (server still running):', err.message))
