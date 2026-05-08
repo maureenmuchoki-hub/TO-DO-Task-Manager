@@ -55,6 +55,7 @@
 
 ## Project Structure
 
+```
 todo-app/
 ├── backend/
 │   ├── middleware/
@@ -92,8 +93,7 @@ todo-app/
 │   ├── main.jsx
 │   └── index.css
 └── vite.config.js
-
----
+```
 
 ## Getting Started
 
