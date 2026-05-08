@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import API from '../api/axios'
 
 function Dashboard() {
@@ -12,6 +12,7 @@ function Dashboard() {
   })
 
   const navigate = useNavigate()
+  const location = useLocation()
   const user = JSON.parse(localStorage.getItem('user') || '{}')
 
   useEffect(() => {
@@ -89,6 +90,15 @@ function Dashboard() {
     return 'Good evening'
   }
 
+  const navItems = [
+    { label: 'Dashboard', icon: '⊞', path: '/dashboard' },
+    { label: 'Tasks', icon: '☑', path: '/dashboard' },
+    { label: 'Calendar', icon: '📅', path: '/calendar' },
+    { label: 'Focus Mode', icon: '⏱', path: '/focus' },
+    { label: 'Stats', icon: '📊', path: '/stats' },
+    { label: 'Achievements', icon: '🏆', path: '/achievements' },
+  ]
+
   return (
     <div className="min-h-screen bg-gray-50 flex">
 
@@ -102,16 +112,15 @@ function Dashboard() {
         </div>
 
         <nav className="flex flex-col gap-1 flex-1">
-          {[
-            { label: 'Dashboard', icon: '⊞' },
-            { label: 'Tasks', icon: '☑' },
-            { label: 'Calendar', icon: '📅' },
-            { label: 'Focus Mode', icon: '⏱' },
-            { label: 'Stats', icon: '📊' },
-            { label: 'Achievements', icon: '🏆' },
-          ].map(item => (
-            <button key={item.label}
-              className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:bg-violet-50 hover:text-violet-600 transition text-left">
+          {navItems.map(item => (
+            <button
+              key={item.label}
+              onClick={() => navigate(item.path)}
+              className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition text-left w-full
+                ${location.pathname === item.path
+                  ? 'bg-violet-600 text-white'
+                  : 'text-gray-600 hover:bg-violet-50 hover:text-violet-600'
+                }`}>
               <span>{item.icon}</span>
               {item.label}
             </button>
