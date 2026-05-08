@@ -1,6 +1,3 @@
-const dns = require("dns");
-dns.setServers(["8.8.8.8", "8.8.4.4"]);
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -28,5 +25,5 @@ app.listen(process.env.PORT || 5000, () =>
 )
 
 mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log('MongoDB connected to:', process.env.MONGO_URI))
+  .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('DB connection error (server still running):', err.message))
