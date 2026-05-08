@@ -7,6 +7,8 @@ import Tasks from './pages/Tasks'
 import Focus from './pages/Focus'
 import Stats from './pages/Stats'
 import Achievements from './pages/Achievements'
+import Settings from './pages/Settings'
+import Inbox from './pages/Inbox'
 import { useAuth } from './context/AuthContext'
 
 function ProtectedRoute({ children }) {
@@ -27,6 +29,8 @@ function App() {
         <Route path="/focus" element={<ProtectedRoute><Focus /></ProtectedRoute>} />
         <Route path="/stats" element={<ProtectedRoute><Stats /></ProtectedRoute>} />
         <Route path="/achievements" element={<ProtectedRoute><Achievements /></ProtectedRoute>} />
+        <Route path="/inbox" element={<ProtectedRoute><Inbox /></ProtectedRoute>} />
+        <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
       </Routes>
     </BrowserRouter>
   )
