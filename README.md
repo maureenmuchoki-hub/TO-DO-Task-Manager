@@ -212,7 +212,9 @@ Visit **http://localhost:5173** in your browser.
 -
 -  ## Acknowledgements
 
-Special thanks to IYF Weekend Academy and all contributors who supported this project.
+We would like to express our sincere gratitude to the IYF Weekend Academy for providing the learning opportunity, guidance, and support throughout this project.
+Special thanks to all mentors, instructors, and contributors whose knowledge, feedback, and encouragement made this project possible.
+We also appreciate the open-source community and everyone who contributed ideas, resources, and inspiration during the development process.
 - 
 - 
 
