@@ -202,7 +202,13 @@ Visit **http://localhost:5173** in your browser.
 ---
 
 ## Contributors
-
+- [@dancunkamau53](https://github.com/dancunkamau53)
+- [@maureenmuchoki-hub](https://github.com/maureenmuchoki-hub)
+- [@wachira-54](https://github.com/wachira-54)
+- [@chesemchanel](https://github.com/chesemchanel)
+- [@miltonerick4410-oss](https://github.com/miltonerick4410-oss)
+- [@letema](https://github.com/letema)
+- [@grace001-m](https://github.com/grace001-m)
 - 
 - 
 - 
