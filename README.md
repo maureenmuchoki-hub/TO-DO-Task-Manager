@@ -209,7 +209,10 @@ Visit **http://localhost:5173** in your browser.
 - [@miltonerick4410-oss](https://github.com/miltonerick4410-oss)
 - [@letema](https://github.com/letema)
 - [@grace001-m](https://github.com/grace001-m)
-- 
+-
+-  ## Acknowledgements
+
+Special thanks to IYF Weekend Academy and all contributors who supported this project.
 - 
 - 
 
